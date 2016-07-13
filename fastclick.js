@@ -7,6 +7,6 @@ javascript:{
 */
 function q(i){return document.querySelector(i);}
 document.onkeydown=function(e){
-  if (e.keyCode==16){ var h=q("h2");if (h){h.click();} }
+  if (e.keyCode==16 && document.activeElement.tagName!="INPUT"){ q("h2").click(); }
 };
 };
